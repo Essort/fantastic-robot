@@ -1,0 +1,6 @@
+opencv-python
+depthai==2.0.0.1
+pygame
+adafruit-circuitpython-pca9685
+adafruit-circuitpython-servokit
+

@@ -1,0 +1,5 @@
+
+#!/usr/bin/bash
+
+# set the device IP
+cd ~/ustreamer && ./ustreamer --device=/dev/video2 --format=MJPEG --host=192.168.0.16 -p 8081 -r 1280x720 --allow-origin *
