@@ -65,3 +65,9 @@ sudo reboot
 ```
 python -m pip install -r requirements_rpi.txt
 ```
+
+  
+ # coming  soon:
+- Arduino source code
+- custom PCB shield for the arduino
+- Unreal Engine 4 project with the stereo camera, and OAK-D support
