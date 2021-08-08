@@ -1,13 +1,18 @@
-# fantastic-robot
-This is the repository of the Obelisk 2 robot. (github suggested the name :) )
-
-# OAK-D camera mount
-This is the 3D printable OAK-D mount used on our robot (it can be downloaded here too: https://www.tinkercad.com/things/eBv3UJN90H8 )
-
-
 #Python programs
 
+### main.py<br>
+This is the main program, with object detection. It can detect and distinguishes objects.
+It contains a TCP server. When client connected this will post a JSON array to a client.
+The array contains, camera ID, detected object name, x, y coordinates, and Z for the depth (distance to the detected object)
+When we are testing it we used with multiple instances with different camera ID, because we don't need frame synced operation.
+
 ## Example directory - (test programs)
+
+### 1_example_depthai.py<br>
+This is used to exporting images with various colormaps for testing
+
+### 2_example_depth_tcp.py<br>
+This is the TCP server to test the depth map visualisation in unreal engine
 
 ### socketServer.py<br>
 For host testing. Simple echo server
@@ -29,13 +34,15 @@ Main python program running on the robot. The head, and stepper motor controller
 - This requires adafruit-circuitpython-servokit 
 - run on rpi:
   ```
-  python -m pip install -r requirements.txt
+  python -m pip install -r requirements_v2.txt
   python -m pip install -r requirements_rpi.txt
   ```
 
 ### robotController_only_move.py<brr>
 Test program for only to move the robot
 - it can be used to test the communication on windows
+
+
 
 ---
 ## Pre-requisites
@@ -66,8 +73,9 @@ sudo reboot
 python -m pip install -r requirements_rpi.txt
 ```
 
-  
- # coming  soon:
-- Arduino source code
-- custom PCB shield for the arduino
-- Unreal Engine 4 project with the stereo camera, and OAK-D support
+## models directory
+It contains the model for the main.py (object detection)
+
+
+
+

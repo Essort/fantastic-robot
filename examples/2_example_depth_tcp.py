@@ -121,16 +121,14 @@ with dai.Device(pipeline) as device:
         key = cv2.waitKey(1)
         if key == ord('q'):
             break
-			
-		# colormap test for unreal engine demo
         elif key == ord('n'):
             if colormap < 21:
                 colormap = colormap + 1
         elif key == ord('p'):
             if colormap > 0:
                 colormap = colormap - 1
-		
-		# sending data to unreal engine
+
+
         if server_TCP.datatosend == "":
             list = []
 

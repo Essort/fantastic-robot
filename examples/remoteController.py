@@ -73,8 +73,6 @@ def sendSocketComm(data):
     ##Robot IP adddress defined here
 
     HOST, PORT = "192.168.88.252", 27015
-	
-
     # Create a socket (SOCK_STREAM means a TCP socket)
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
