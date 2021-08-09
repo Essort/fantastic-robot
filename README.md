@@ -1,3 +1,6 @@
+Project build log:
+https://hackaday.io/project/167713
+
 #Python programs
 
 ### main.py<br>
